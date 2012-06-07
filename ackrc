@@ -1,0 +1,7 @@
+--type-add=ruby=.erb,.haml,.sass,.rake 
+--type-set=haml=.haml 
+--type-set=sass=.sass
+--type-set=cucumber=.feature
+--type-set=yml=.yml
+--smart-case
+

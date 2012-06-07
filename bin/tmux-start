@@ -1,0 +1,17 @@
+#!/bin/bash
+
+cd ~/
+host=`hostname -s`
+tmux new-session -d -s ${host}-work
+tmux split-window -h -t ${host}-work:0
+tmux new-window -t ${host}-work:1
+tmux new-window -t ${host}-work:2
+tmux select-window -t ${host}-work:0
+
+tmux new-session -d -s ${host}
+tmux split-window -h -t ${host}:0
+tmux new-window -t ${host}:1
+tmux new-window -t ${host}:2
+tmux select-window -t ${host}:0
+
+tmux attach -t ${host}-work

@@ -1,0 +1,4 @@
+vim/backup/*
+vim/tmp/*
+vim/sessions/*
+.DS_Store
