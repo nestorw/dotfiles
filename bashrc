@@ -1,12 +1,12 @@
 #
 # vi command prompt
 #
-set -o vi
+#set -o vi
 
 #
 # Homebrew
 #
-if command -v sw_vers &>/dev/null; then
+if [[ `uname -s` == 'Darwin' ]]; then
   export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 fi
 
@@ -49,6 +49,10 @@ alias cucumber='bundle exec cucumber'
 alias rspec='bundle exec rspec'
 alias cap='bundle exec cap'
 
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
 #
 # Git autocomplete
 #

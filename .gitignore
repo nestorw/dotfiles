@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 vim/backup/*
 vim/tmp/*
@@ -21,3 +22,6 @@ capybara-*.html
 rerun.txt
 pickle-email-*.html
 
+=======
+tags
+>>>>>>> 9895285042a2fd5691b2f6582aa979e4d1bdffea

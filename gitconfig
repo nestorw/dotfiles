@@ -1,10 +1,10 @@
 [user]
     name = Nestor Walker
-    email = nesotr@smartlogicsolutions.com
+    email = nestor@developdc.com
 
 [core]
     editor = vim
-    excludesfile = /Users/eric/.gitignore_global
+    excludesfile = /Users/nestor/.gitignore_global
 
 [color]
     branch = auto
@@ -30,3 +30,7 @@
 [alias]
     full-stash = stash --include-untracked
     ll = log --oneline -n 5
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
