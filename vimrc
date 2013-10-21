@@ -16,6 +16,8 @@ set number
 
 set foldmethod=syntax
 
+set backspace=2
+
 "
 " Colorscheme
 "
