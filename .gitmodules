@@ -12,7 +12,7 @@
 	url = https://github.com/mileszs/ack.vim.git
 [submodule "vim/bundle/bufexplorer"]
 	path = vim/bundle/bufexplorer
-	url = https://github.com/c9s/bufexplorer.git
+	url = https://github.com/jlanzarotta/bufexplorer.git
 
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
