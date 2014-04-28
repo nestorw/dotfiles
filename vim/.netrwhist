@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/nestor/.ssh'
 let g:netrw_dirhist_2='/home/nestor/.ssh'
 let g:netrw_dirhist_3='/Users/nestor/dotfiles/vim/bundle'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/Users/nestor/dotfiles/vim/bundle'
 let g:netrw_dirhist_6='/Users/nestor/dotfiles/vim'
 let g:netrw_dirhist_7='/Users/nestor/dotfiles'
 let g:netrw_dirhist_8='/Users/nestor/dotfiles/.git'
+let g:netrw_dirhist_9='/home/nestor/dotfiles/.git/modules/vim/bundle/bufexplorer'
