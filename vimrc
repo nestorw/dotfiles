@@ -3,6 +3,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 syntax on
+syn sync fromstart
 filetype off
 filetype plugin indent on
 
@@ -68,6 +69,7 @@ set gdefault
 
 " disable autoload of session
 let g:session_autoload="no"
+autocmd vimenter * if !argc() | NERDTree | endif
 
 "
 " Remaps
@@ -78,6 +80,7 @@ nnoremap <F3> :set nonumber!<CR>
 
 map <Leader>t :CommandT<CR>
 map <Leader>f :CommandTFlush<CR>
+map <leader>n :NERDTreeToggle<CR>
 map <leader>m :BufExplorer<CR>
 map <Leader>a :Ack 
 map <Leader><Space> :noh<CR>

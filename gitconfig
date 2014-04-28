@@ -1,10 +1,14 @@
 [user]
-    name = Nestor Walker
-    email = nestor@developdc.com
+	name = Nestor Walker
+	email = nestor@developdc.com
 
 [core]
     editor = vim
-    excludesfile = /Users/nestor/.gitignore_global
+	excludesfile = /Users/nestor/.gitignore_global
+
+[help]
+    autocomplete = 1
+	autocorrect = 1
 
 [color]
     branch = auto
@@ -28,9 +32,17 @@
     untracked = cyan
 
 [alias]
-    full-stash = stash --include-untracked
-    ll = log --oneline -n 5
+  full-stash = stash --include-untracked
+  ll = log --oneline -n 5
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	co = checkout
 	br = branch
 	ci = commit
 	st = status
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
