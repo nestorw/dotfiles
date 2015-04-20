@@ -1,14 +1,14 @@
 [user]
-	name = Nestor Walker
-	email = nestor@developdc.com
+  name = Nestor Walker
+  email = nestor@developdc.com
 
 [core]
     editor = vim
-	excludesfile = /Users/nestor/.gitignore_global
+    excludesfile = /Users/nestor/.gitignore_global
 
 [help]
     autocomplete = 1
-	autocorrect = 1
+    autocorrect = 1
 
 [color]
     branch = auto
