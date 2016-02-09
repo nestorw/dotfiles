@@ -43,3 +43,6 @@ fi
 # Submodules
 git submodule init
 git submodule update
+
+mkdir -p ~/.vim/tmp
+mkdir -p ~/.vim/backup
