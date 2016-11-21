@@ -56,6 +56,11 @@ alias cap='bundle exec cap'
 source ~/dotfiles/git-complete.sh
 
 #
+# Docker Aliases
+#
+source ~/dotfiles/docker-alias.sh
+
+#
 # For custom scripts
 #
 export PATH=~/dotfiles/bin:~/sync/bin:$PATH
