@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/nestor/dotfiles/vim/bundle'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/naw4t/code/ils_connector/app/models/v4'
+let g:netrw_dirhist_2='/Users/naw4t/code/ils_connector/app/models'
+let g:netrw_dirhist_3='/Users/naw4t/code/ils_connector/app/models/v4'

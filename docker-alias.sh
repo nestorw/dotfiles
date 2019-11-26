@@ -45,4 +45,4 @@ function de() {
 alias dm='docker-machine'
 alias dc='docker-compose'
 
-dmequiet
+dmequiet default

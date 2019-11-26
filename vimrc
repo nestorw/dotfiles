@@ -28,6 +28,12 @@ let g:solarized_termtrans=1
 colorscheme solarized
 
 "
+" Custom Colors
+"
+autocmd BufNewFile,BufRead *.jbuilder set syntax=ruby
+
+
+"
 " Show trailing spaces
 "
 set listchars=tab:»·,trail:·
@@ -119,6 +125,9 @@ nnoremap <Leader>` :source $MYVIMRC<CR>
 
 " Remove trailing whitespace
 nnoremap <Leader>ts :%s/\s\+$//<CR>
+
+" fzf Fuzzy Search
+set rtp+=/usr/local/opt/fzf
 
 "
 " Rails

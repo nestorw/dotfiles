@@ -20,13 +20,29 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 #
 # Prompt
 #
+function __ruby_version {
+  rbv=`rvm-prompt`
+  rbv=${rbv#ruby-}
+  [[ $rbv == *"@"* ]] || rbv="${rbv}@default"
+  echo $rbv
+}
+
+function git_dirty {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "♦ "
+}
 NO_C='\[\033[00m\]'
 GREEN='\[\033[00;32m\]'
+CYAN='\e[0;36m'
+RED='\e[0;91m'
+GRAY='\e[0;90m'
 BLUE='\[\033[00;34m\]'
 YELLOW='\[\033[00;33m\]'
-GITBRANCH='`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\ \(\\\\\1\)/`'
+GITBRANCH='`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)/```'
 
-PS1="$GREEN\u@\h$NO_C:[$BLUE\w$YELLOW$GITBRANCH$NO_C]\$ "
+
+export PS1="$GRAY\u@\h$NO_C[$YELLOW$GITBRANCH$RED\$(git_dirty)\$(__ruby_version)$NO_C]\n$BLUE\w$NO_C $ "
+#export PS1="\[$(tput bold)\]\[$(tput setaf 1)\]\u\[$(tput setaf 4)\]@\[$(tput setaf 6)\]\h\[$(tput setaf 4)\][\[$(tput setaf 2)\]\W\[$(tput setaf 4)\]]\\$ \[$(tput sgr0)\]"
 
 #
 # Export
@@ -49,6 +65,7 @@ alias rake='bundle exec rake'
 alias cucumber='bundle exec cucumber'
 alias rspec='bundle exec rspec'
 alias cap='bundle exec cap'
+alias g='git status'
 
 #
 # Git autocomplete
